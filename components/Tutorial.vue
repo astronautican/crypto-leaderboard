@@ -4,7 +4,7 @@
     <div class="columns-3">
       <div>colum1!</div>
       <div>colum2</div>
-      <div>colum3</div>
+      <div>colum3!</div>
     </div>
   </div>
 </template>
