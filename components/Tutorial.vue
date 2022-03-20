@@ -1,7 +1,7 @@
 <!-- Please remove this file from your project -->
 <template>
   <div class="flex justify-center">
-    <table class="table-fixed">
+    <table class="table-auto">
       <thead>
         <tr>
           <th>Song</th>
@@ -10,28 +10,36 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
-          <td>Malcolm Lockyer</td>
-          <td>1961</td>
-        </tr>
-        <tr>
-          <td>Witchy Woman</td>
-          <td>The Eagles</td>
-          <td>1972</td>
-        </tr>
-        <tr>
-          <td>Shining Star</td>
-          <td>Earth, Wind, and Fire</td>
-          <td>1975</td>
-        </tr>
+        <div v-for="item in DataDump" :key="item">
+          <tr>
+            <td>{{ item.name }}</td>
+            <td>{{ item.symbol }}</td>
+            <td>{{ item.symbol }}</td>
+          </tr>
+        </div>
       </tbody>
     </table>
   </div>
 </template>
 
 <script>
+// https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false
+
 export default {
   name: "NuxtTutorial",
+  data: function () {
+    return {
+      DataDump: [],
+    };
+  },
+
+  created() {
+    // Simple GET request using fetch
+    fetch(
+      "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false"
+    )
+      .then((response) => response.json())
+      .then((data) => (this.DataDump = data));
+  },
 };
 </script>
