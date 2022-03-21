@@ -1,6 +1,11 @@
 <template>
   <div class="flex items-center justify-center min-h-screen bg-gray-900">
     <div class="col-span-12">
+      <div class="header flex justify-center">
+        <div class="my-50">
+          <h1>Crypto Leaderboard!</h1>
+        </div>
+      </div>
       <div class="overflow-auto lg:overflow-visible">
         <table class="table text-gray-400 border-separate space-y-6 text-sm">
           <thead class="bg-gray-800 text-gray-500">
