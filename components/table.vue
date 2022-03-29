@@ -3,7 +3,7 @@
     <div class="col-span-12">
       <div class="header flex justify-center">
         <div class="my-50">
-          <h1>Crypto Leaderboard!</h1>
+          <h1>Crypto Leaderboard</h1>
         </div>
       </div>
       <div class="overflow-auto lg:overflow-visible">
