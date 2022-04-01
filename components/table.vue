@@ -14,7 +14,7 @@
               <th class="p-3">Coin</th>
               <th class="p-3 text-left">Names</th>
               <th class="p-3 text-left">Price</th>
-              <th class="p-3 text-left">24h Change</th>
+              <th class="p-3 text-left">24h Changes</th>
               <th class="p-3 text-left">ATH</th>
               <th class="p-3 text-left">ATL</th>
             </tr>
