@@ -11,7 +11,7 @@
           <thead class="bg-gray-800 text-gray-500">
             <tr>
               <!-- <th class="p-3">Image</th> -->
-              <th class="p-3">Coin</th>
+              <th class="p-3">Coins</th>
               <th class="p-3 text-left">Names</th>
               <th class="p-3 text-left">Price</th>
               <th class="p-3 text-left">24h Changes</th>
